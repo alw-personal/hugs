@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Multiplayer Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="game-container">
+    </div>
+    <div class="player-info">
+      <div>
+        <button id="player-character">Change Character</button>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBaiD3t2wno59tJDDsmN__nGKyk-mqPBtQ",
+        authDomain: "hugs-117a3.firebaseapp.com",
+        databaseURL: "https://hugs-117a3-default-rtdb.firebaseio.com",
+        projectId: "hugs-117a3",
+        storageBucket: "hugs-117a3.appspot.com",
+        messagingSenderId: "1042043792539",
+        appId: "1:1042043792539:web:6f37c64f0290c98f3dea3e"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/app.js"></script>
+  </body>
+</html>

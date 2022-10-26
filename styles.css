@@ -1,0 +1,70 @@
+* {
+  box-sizing:border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+}
+
+.game-container { 
+  position: relative;
+  width: 1200px;
+  height: 600px;
+}
+
+.player-info {
+  position: absolute;
+  top: 0;
+  left:0;
+  padding: 1em;
+  display: flex;
+  gap: 0.5em;
+  align-items: flex-end
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  height: 44px;
+  border-radius: 4px;
+  outline: 0;
+}
+
+button {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Characters */
+.Character {
+  position: absolute;
+  transition: transform 0.4s;
+  top: 100px;
+}
+.Character.you {
+  z-index: 1;
+}
+.Character_sprite {
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  background: url(/images/char1.png) -225px -645px;
+}
+.Character[data-character="lucy"] .Character_sprite {
+  overflow: hidden;
+  background: url(/images/char2.png) -225px -645px;
+}
+.Character[data-direction="left"] .Character_sprite {
+  transform: scaleX(-1);
+}
+
