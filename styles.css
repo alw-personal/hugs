@@ -58,11 +58,11 @@ button {
   width: 300px;
   height: 450px;
   overflow: hidden;
-  background: url(/images/char1.png) -225px -645px;
+  background: url(https://alw-personal.github.io/hugs/images/char1.png) -225px -645px;
 }
 .Character[data-character="lucy"] .Character_sprite {
   overflow: hidden;
-  background: url(/images/char2.png) -225px -645px;
+  background: url(https://alw-personal.github.io/hugs/images/char2.png) -225px -645px;
 }
 .Character[data-direction="left"] .Character_sprite {
   transform: scaleX(-1);
