@@ -2,7 +2,7 @@
   // Game constants
   const maxWidth = 60
   const gameTickDelay = 100
-  const animateDelay = 500
+  const animateDelay = 250
   const xStepSize = 16
 
   // Animation related data
