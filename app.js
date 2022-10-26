@@ -10,7 +10,7 @@
   const spriteData = {
     still: [
       [-225, -645],
-      [1165, 0]
+      // [1165, 0]
     ],
     walk: [
       [-225, -645],
@@ -57,7 +57,7 @@
   const nextSprite = function (currentSprite, endingAnimation = false) {
     switch (currentSprite[0]) {
       case 'still':
-        return ['still', (currentSprite[1] + 1) % 2]
+        return ['still', 0]
       case 'walk':
         return ['walk', (currentSprite[1] + 1) % 5]
       case 'hug':
@@ -74,7 +74,7 @@
         if (endingAnimation) {
           return ['hand', currentSprite[1] - 1]
         } else {
-          return ['hand', Math.min(currentSprite[1] + 1, 2)]
+          return ['hand', Math.min(currentSprite[1] + 1, 3)]
         }
       case 'pat':
         if (endingAnimation) {
